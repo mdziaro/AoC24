@@ -1,3 +1,4 @@
+### input
 file = open("input.txt", "r")
 data = file.readlines()
 
@@ -6,6 +7,8 @@ for i in range(len(data)):
         data[i] = data[i][:-1]
     data[i] = data[i].split(" ")
     data[i]= (data[i][0], data[i][3])
+    
+### end input
 
 left_list, right_list, diffs = [], [], []
 for i in range(len(data)):
