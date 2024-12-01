@@ -19,7 +19,9 @@ Time: O(n)
 ## Idea 1
 Similiarly to part 1, we separate the data into two lists, left and right.
 Next, for each number in left list, we count occurences in right list.
-Assuming naive approach, we iterate over right list each time, checking if the number from left list is matching the one we currently iterate over.
+Assuming naive approach, we iterate over right list each time, checking if the number from left list is matching the one we currently iterate over. We multiply both these values, and assign to another array.
+At the end, we sum elements of the newly-created array.
+
 Problem: O(n^2) time complexity.
 Possible solutions: Creating a dictionary {number: no_of_occurences}, which reduces the times we iterate over right list from *n* times to 1. To be researched later.
 
