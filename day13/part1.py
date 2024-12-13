@@ -9,6 +9,7 @@ pattern = r"[-+]?\d+"
 results = []
 
 for line in data:
+
     numbers = re.findall(pattern, line)
     if numbers:
         results.append([int(num) for num in numbers])
