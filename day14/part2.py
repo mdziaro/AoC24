@@ -46,5 +46,4 @@ for seconds in range(0,10000):
             for j in range(width + 2):
                 if view[i][j] == "#":
                     draw.point((i, j), fill=(0, 0, 0))
-
         img.save(f"output_second_{seconds}.png")
